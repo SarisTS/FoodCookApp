@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="heading">
+        <span onclick="location.href='index.html'">BACK</span>
+        <h2>🥝Food Cook Planner</h2>
+    </header>
+    <main>
+        <h3><span id="nameGreet"></span>Feedback form</h3>
+        <form name="feedbackForm">
+            <div class="fullname">
+                <input type="text" name="fullname" placeholder="Enter your full name" class="input" required>
+            </div>
+            <div class="radio" id="radio">
+                <div>
+                    <input type="radio" name="feedback" id="general-feedback" value="general-feedback">
+                    <label for="general-feedback">General Feedback</label>
+                </div>
+                <div>
+                    <input type="radio" name="feedback" id="technical-support" value="technical-support">
+                    <label for="technical-support">Technical Support</label>
+                </div>
+                <div>
+                    <input type="radio" name="feedback" id="contributions" value="contributions">
+                    <label for="contributions">Contributions</label>
+                </div>
+            </div>
+            <div class="two_input">
+                <div>
+                    <input type="email" id="email" name="email" placeholder="your@example.com" class="input" required>
+                </div>
+                <div>
+                    <select name="country" id="country">
+                        <option value="">--Select country--</option>
+                        <option value="IND">India</option>
+                        <option value="LK">Srilanka</option>
+                        <option value="MYS">Malaysia</option>
+                        <option value="SGP">Singapore</option>
+                        <option value="THA">Thailand</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <textarea name="feedbacktext" id="" placeholder="write your feedback here...." required></textarea>
+            </div>
+            <div class="checkbox">
+                <div>
+                    <label for="songs">
+                        <input type="checkbox" name="hobbies" id="songs" value="songs">
+                        Songs
+                    </label>
+                </div>
+                <div>
+                    <label for="dance">
+                        <input type="checkbox" name="hobbies" id="dance" value="dance">
+                        Dance
+                    </label>
+                </div>
+                <div>
+                    <label for="playing">
+                        <input type="checkbox" name="hobbies" id="playing" value="playing">
+                        Playing
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="accept" name="terms" required>
+                <label for="accept">I accept the terms and conditions</label>
+            </div>
+            <div>
+                <button name="submit">Submit</button>
+            </div>
+            <div id="response"></div>
+        </form>
+    </main>
+    <script>
+        const form = document.forms.feedbackForm;
+        const radio = document.querySelector("#radio");
+        const checkBox = document.querySelector(".checkbox");
+        const country = form.elements.country;
+
+
+        const{fullname, feedback, email, feedbacktext, hobbies, terms} = form.elements;
+        const feedbackArray = [...feedback];
+        const hobbiesArray = [...hobbies]
+        form.addEventListener("submit", (event)=>{
+            event.preventDefault();
+            const formdata = new FormData(form);
+            console.log([...formdata.entries()]);
+        })
+    </script>
+</body>
+</html>

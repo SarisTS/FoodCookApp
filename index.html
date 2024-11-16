@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+<body>
+    <header id="heading">
+        <h2>🥝Food Cook Planner</h2>
+    </header>
+    <main>
+        <div class="search_container" id="search_container">
+            <input type="text" name="food_input" id="food_input" placeholder="Enter your food">
+            <button type="submit" id="saveBtn">Save</button>
+        </div>
+        <div id="food_container">
+            <h3 class="count"></h3>
+            <ul class="food_list" id="food_list">
+            </ul>
+            <div class="image_part">
+                <img src="/Images/food.jpg" alt="foodImage">
+                <h4>Create your food</h4>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button id="creditBtn" onclick="location.href='credits.html'">Credits</button>
+        <button id="feedbackBtn" onclick="location.href='feedback.html'">Feedback</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

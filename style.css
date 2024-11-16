@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#heading{
+    text-align: center;
+    background-color: rgb(8, 35, 117);
+    color: #fff;
+    padding: 20px;
+}
+body{
+    background-color: rgb(222, 229, 254);
+}
+main{
+    margin: 20px auto;
+    width: 700px;
+}
+.search_container{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(173, 172, 172);
+}
+.search_container input{
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.search_container button{
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+}
+#food_container{
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(173, 172, 172);
+}
+.image_part{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    opacity: 0.9;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #353059;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(8, 35, 117);
+    background-color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#food_container ul{
+    list-style: none;
+}
+.food_item{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    color: gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.food_item:hover{
+    background-color: royalblue;
+    color: white;
+}
+.count{
+    color: gray;
+}
+table{
+    background-color: #fff;
+    margin: 20px auto;
+    border-spacing: 0;
+}
+table th,td{
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+thead tr{
+    background-color: royalblue;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+tr.active{
+    background-color: cornflowerblue;
+}
+header span{
+    float: left;
+    cursor: pointer;
+}
+/* Feedback Page */
+h3{
+    text-align: center;
+}
+form div{
+    padding: 10px;
+}
+form{
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 20px 20px rgb(145, 144, 144);
+    color: gray;
+}
+form .input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+form #email{
+    width: 250px;
+}
+form textarea{
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+form button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: royalblue;
+    color: #fff;
+}
+.radio{
+    display: flex;
+}
+.checkbox{
+    display: flex;
+}
+.two_input{
+    display: flex;
+}
+form select{
+    width: 250px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;  
+    color: gray;
+}
